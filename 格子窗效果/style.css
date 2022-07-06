@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 父组件样式 */
+.maintainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  box-sizing: border-box;
+}
+/* 小格子的样式 */
+.maintainer .grid {
+  width: 10vw;
+  height: 90vh;
+  background-color: #fff;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 动画 */
+  transition: width 3s ease;
+}
+.maintainer .grid span {
+  position: absolute;
+  display: none;
+  color: #fff;
+  font-size: 5rem;
+  writing-mode: vertical-lr;
+}
+/* 小格子图片样式 */
+.grid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
