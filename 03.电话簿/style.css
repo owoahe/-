@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2 {
+  color: #fff;
+  margin-top: 10px;
+}
+/* 遮罩层 */
+.shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 999;
+}
+.shadow .message {
+  width: 16vw;
+  height: 15vh;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  min-width: 230px;
+}
+.message .title {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}
+.message .info {
+  text-indent: 1rem;
+  padding: 5px 0;
+}
+/* 大盒子 */
+.maintainer {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  background-color: darkslateblue;
+  width: 100vw;
+  height: 100vh;
+}
+.maintainer .item {
+  display: flex;
+  flex-direction: column;
+}
+/* 电话簿头部 */
+.add {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  transition: 0.5s;
+}
+.addhidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(100px);
+  transform: rotateZ(-45deg);
+  transition: 0.5s;
+}
+.item .hander {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+/* 查询按钮 */
+.hander button {
+  height: 30px;
+  width: 70px;
+  color: #fff;
+  background-color: #6455ec;
+}
+.hander button:hover {
+  background-color: #5447c7;
+}
+/* 添加用户表单 */
+.maintainer .item form {
+  display: flex;
+  flex-direction: column;
+}
+/* 所有输入框的样式 */
+input {
+  width: 15vw;
+  height: 3vh;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 5px;
+}
+/* 添加用户表单的input  */
+.form-control {
+  margin-top: 10px;
+  min-width: 216px;
+}
+/* 所有按钮的样式 */
+button {
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+/* 添加用户表单的按钮组 */
+.btngroup {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+/* 添加用户表单的按钮 */
+.btngroup button {
+  height: 30px;
+  width: 100%;
+}
+.btngroup button:nth-child(1) {
+  margin-right: 10px;
+  background-color: #6455ec;
+  color: #fff;
+  font-weight: bold;
+}
+.btngroup button:nth-child(1):hover {
+  background-color: #5447c7;
+}
+
+.btngroup button:nth-child(2) {
+  background-color: #ec556e;
+  color: #fff;
+  font-weight: bold;
+}
+.btngroup button:nth-child(2):hover {
+  background-color: #c7465b;
+}
+
+/* 联系人列表 */
+.list {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  transform: translateY(100px) rotateZ(45deg);
+
+  opacity: 0;
+  transition: 0.5s;
+}
+.listshow {
+  visibility: visible;
+  transform: translateY(-200px);
+  opacity: 1;
+  transition: 0.5s;
+}
+/* 联系人列表头部 */
+.list-hander {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.returnBtn {
+  align-self: start;
+  background-color: transparent !important;
+  margin-top: 6px !important;
+}
+
+/* 联系人列表表单 */
+.list form {
+  display: flex;
+  align-items: center;
+}
+/* 联系人列表搜索框 */
+.list input {
+  width: 15vw;
+  min-width: 216px;
+  margin-top: 10px;
+}
+/* 联系人列表按钮 */
+.list button {
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 35px;
+  width: 70px;
+  background-color: #6455ec;
+  color: #fff;
+  font-weight: bold;
+}
+
+.list button:hover {
+  background-color: #5447c7;
+}
+
+/* 结果 */
+.result {
+  color: darkslateblue;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.result p {
+  border-radius: 5px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 5px;
+}

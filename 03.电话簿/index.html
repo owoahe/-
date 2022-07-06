@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>03.电话簿</title>
+  </head>
+  <body>
+    <!-- 遮罩层 -->
+    <div class="shadow">
+      <div class="message">
+        <div class="title">标题</div>
+        <div class="info">信息</div>
+      </div>
+    </div>
+    <div class="maintainer">
+      <div class="item">
+        <div class="add">
+          <div class="hander">
+            <h1>电话簿</h1>
+            <button onclick="showList('list')">查询</button>
+          </div>
+          <form onsubmit="onUserPostHander()">
+            <input
+              type="text"
+              placeholder="请输入姓名"
+              class="form-control username"
+              oninput="onUserInputHander('name')"
+            />
+            <input
+              type="phone"
+              placeholder="请输入电话号码"
+              class="form-control userphone"
+              oninput="onUserInputHander('phone')"
+            />
+            <div class="btngroup">
+              <button type="submit">添加</button>
+              <button type="reset">重置</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="list">
+        <div class="list-hander">
+          <h1>联系人列表</h1>
+          <button onclick="showList('add')" class="returnBtn">◀ 添加</button>
+        </div>
+        <form>
+          <input
+            type="text"
+            placeholder="请输入要搜索的姓名"
+            onInput="searchInputHandler()"
+            class="searchipt"
+          />
+          <button onclick="search()">搜索</button>
+        </form>
+        <div class="result">
+          <p>张伟-15883438518</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>
