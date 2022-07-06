@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>原生html，css，javaScript项目大全</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .maintainer {
+        display: flex;
+        background-color: darkslateblue;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .maintainer .item {
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      h1 {
+        margin-top: 10px;
+        color: #fff;
+      }
+      h3 {
+        color: whitesmoke;
+        margin-top: 10px;
+      }
+      a {
+        display: block;
+        min-width: 100px;
+        width: 10vw;
+        height: 10vh;
+        background-color: #fff;
+        margin: 5px;
+        text-align: center;
+        line-height: 10vh;
+        text-decoration: none;
+        color: #2c2c2c;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-style: italic;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <a href="./格子窗效果/index.html">格子窗效果</a>
+    <div class="maintainer">
+      <h1>原生web小项目集合</h1>
+      <h3>by owoahe / webProjectsCollection - github</h3>
+      <div class="item">
+        <a href="https://github.com/owoahe/webProjectsCollection">作者主页😊</a>
+        <a href="./格子窗效果/index.html">01.格子窗效果</a>
+        <a href="./游标导航栏/index.html">02.游标导航栏</a>
+      </div>
+    </div>
   </body>
 </html>
