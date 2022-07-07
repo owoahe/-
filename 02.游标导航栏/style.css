@@ -31,6 +31,11 @@
   font-size: 2rem;
 }
 
+.navbar_item div {
+  z-index: 10 !important;
+  transform: translateZ(300px);
+}
+
 .maintainer .navbar .cursor {
   height: 8vh;
   line-height: 8vh;
@@ -39,12 +44,13 @@
   justify-content: center;
   /* width: 10vw; */
   border-radius: 20px;
-  background-color: orange;
+  background-color: rgba(255, 255, 0, 0.8);
   position: absolute;
   left: 0;
-  color: #fff;
+  color: transparent;
   text-align: center;
   border-radius: 20px;
   font-size: 2rem;
   transition: left 1s ease;
+  z-index: 0;
 }
