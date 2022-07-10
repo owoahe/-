@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        .icon {
+          width: 1em;
+          height: 1em;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <title>弹幕框</title>
+  </head>
+  <body>
+    <div class="maintainer">
+      <div class="box">
+        <input type="text" class="ipt iptshow" placeholder="点我发送弹幕"></input>
+        <div class="btn btnshow" onclick="btnClick()">
+            <svg id="open" class="icon iconshow" aria-hidden="true">
+                <use xlink:href="#icon-danmukaiqi"></use>
+            </svg>
+            <svg id="close" class="icon iconhidden" aria-hidden="true">
+                <use xlink:href="#icon-danmuguanbi"></use>
+            </svg>
+        </div>
+      </div>
+    </div>
+    <script src="./icon/iconfont.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
+</html>

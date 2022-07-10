@@ -1,0 +1,23 @@
+{
+  "id": "3511970",
+  "name": "b站弹幕",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "23129875",
+      "name": "弹幕开启",
+      "font_class": "danmukaiqi",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "23129876",
+      "name": "弹幕关闭",
+      "font_class": "danmuguanbi",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    }
+  ]
+}
